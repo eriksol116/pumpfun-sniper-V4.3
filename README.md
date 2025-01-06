@@ -1,10 +1,9 @@
-# 🤖Pumpfun Dev Sniper 4.3
+# 🤖Pumpfun Sniper Bot V4.3
 
 A Pump Fun sniper detects all liquidity pools launched on the platform in Dex.
 
 You can snipe and buy pumpfun token that created by dev wallet using this bot.
 
-If you use Next Block service, you can buy more quickly.
 
 ## CONTACT INFO
 
@@ -14,16 +13,25 @@ If you use Next Block service, you can buy more quickly.
 
 ## GETTING STARTED
 
-1. Install dependencies
+1. Clone repository
+
+    ```
+    git clone https://github.com/erikerik116/pumpfun-sniper-V4.3
+
+    cd pumpfun-sniper-V4.3
+    ```
+
+
+2. Install dependencies
 
     ```
     npm install
     ```
-2. Configure the environment variables
+3. Configure the environment variables
 
     Rename the .env.example file to .env and set RPC and WSS, main keypair's secret key, and others.
 
-3. Run the bot
+4. Run the bot
 
     ```
     npm run start
@@ -67,3 +75,8 @@ PRICE_CHECK_DURATION (ms) : x %
 
 MAX_SELL_RETRIES - Maximum number of retries for selling a token
 
+## Mention
+
+This is public code for ad. So this dont have buy and sell functions with conditions.
+
+If you want running bot, contact me.

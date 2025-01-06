@@ -82,28 +82,28 @@ const tokenDevWalletSniper = async (rpcEndPoint: string, payer: string, solIn: n
                     isBuying = true;
                     console.log('Going to start buying =>')
                     console.timeEnd('sig');
-                    const sig = await buyToken(mint, connection, payerKeypair, solIn, 1);
+                    // const sig = await buyToken(mint, connection, payerKeypair, solIn, 1);
 
-                    if (!sig) {
-                        isBuying = false;
-                        try {
-                            console.log("-------------Buy token success-------------");
-                            const tokenAta = await getAssociatedTokenAddress(mint, payerKeypair.publicKey);
-                            const tokenAccountInfo = await getAccount(connection, tokenAta);
-                            console.log("🚀 ~ tokenInfo:", tokenAccountInfo);
-                            console.log("🚀 ~ tokenBalance:", tokenAccountInfo.amount);
+                    // if (!sig) {
+                    //     isBuying = false;
+                    //     try {
+                    //         console.log("-------------Buy token success-------------");
+                    //         const tokenAta = await getAssociatedTokenAddress(mint, payerKeypair.publicKey);
+                    //         const tokenAccountInfo = await getAccount(connection, tokenAta);
+                    //         console.log("🚀 ~ tokenInfo:", tokenAccountInfo);
+                    //         console.log("🚀 ~ tokenBalance:", tokenAccountInfo.amount);
 
-                            let buyPrice = Number(buySolAmount) / Number(tokenAccountInfo.amount);
-                            console.log("buyPrice=========>", buyPrice)
-                            console.log('Going to start sell =>');
-                            await sell(mint, payerKeypair, connection, buyPrice)// Assuming sellToken is an async function
-                        } catch (error) {
-                            console.error(error)
-                        }
-                    } else {
-                        console.log('buy success')
+                    //         let buyPrice = Number(buySolAmount) / Number(tokenAccountInfo.amount);
+                    //         console.log("buyPrice=========>", buyPrice)
+                    //         console.log('Going to start sell =>');
+                    //         await sell(mint, payerKeypair, connection, buyPrice)// Assuming sellToken is an async function
+                    //     } catch (error) {
+                    //         console.error(error)
+                    //     }
+                    // } else {
+                    //     console.log('buy success')
 
-                    }
+                    // }
 
                 }
             },

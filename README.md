@@ -80,3 +80,15 @@ MAX_SELL_RETRIES - Maximum number of retries for selling a token
 This is public code for ad. So this dont have buy and sell functions with conditions.
 
 If you want running bot, contact me.
+
+## Record Video
+
+
+https://github.com/user-attachments/assets/7a2a0b67-3222-47fd-9c58-8b68887e59d6
+
+
+
+
+https://github.com/user-attachments/assets/ed9c1748-925f-4437-8a7d-ff3312c5b363
+
+

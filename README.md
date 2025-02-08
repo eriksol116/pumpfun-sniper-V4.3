@@ -16,7 +16,7 @@ You can snipe and buy pumpfun token that created by dev wallet using this bot.
 1. Clone repository
 
     ```
-    git clone https://github.com/erikerik116/pumpfun-sniper-V4.3
+    git clone https://github.com/eriksol116/pumpfun-sniper-V4.3
 
     cd pumpfun-sniper-V4.3
     ```
